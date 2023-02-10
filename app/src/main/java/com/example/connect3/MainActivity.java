@@ -18,6 +18,13 @@ public class MainActivity extends AppCompatActivity {
     TextView winnerResult;
     Button playAgain;
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        init();
+    }
+
     public void init() {
         winnerResult = (TextView) findViewById(R.id.winnertxt);
         playAgain = (Button) findViewById(R.id.playAgainBtn);
@@ -70,13 +77,4 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        init();
-    }
-
-
 }
